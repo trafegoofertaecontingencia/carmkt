@@ -24,10 +24,10 @@ export default async function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <h1 className="text-5xl md:text-8xl mb-4 gradient-title">
-              Find your Dream Car with Vehiql AI
+              Encontre o carro dos seus sonhos com [nome do app]
             </h1>
             <p className="text-xl text-gray-500 mb-8 max-w-2xl mx-auto">
-              Advanced AI Car Search and test drive from thousands of vehicles.
+              Busca avançada com IA entre milhares de veículos.
             </p>
           </div>
 
@@ -43,7 +43,7 @@ export default async function Home() {
             <h2 className="text-2xl font-bold">Featured Cars</h2>
             <Button variant="ghost" className="flex items-center" asChild>
               <Link href="/cars">
-                View All <ChevronRight className="ml-1 h-4 w-4" />
+                Ver todos <ChevronRight className="ml-1 h-4 w-4" />
               </Link>
             </Button>
           </div>
@@ -62,7 +62,7 @@ export default async function Home() {
             <h2 className="text-2xl font-bold">Browse by Make</h2>
             <Button variant="ghost" className="flex items-center" asChild>
               <Link href="/cars">
-                View All <ChevronRight className="ml-1 h-4 w-4" />
+                Ver todos <ChevronRight className="ml-1 h-4 w-4" />
               </Link>
             </Button>
           </div>
@@ -94,36 +94,34 @@ export default async function Home() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-12">
-            Why Choose Our Platform
+            Por que escolher nossa plataforma
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-blue-100 text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Car className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Wide Selection</h3>
+              <h3 className="text-xl font-bold mb-2">Ampla Seleção</h3>
               <p className="text-gray-600">
-                Thousands of verified vehicles from trusted dealerships and
-                private sellers.
+                Milhares de veículos verificados de concessionárias confiáveis e vendedores particulares.
               </p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Calendar className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Easy Test Drive</h3>
+              <h3 className="text-xl font-bold mb-2">Faça um Test Drive</h3>
               <p className="text-gray-600">
-                Book a test drive online in minutes, with flexible scheduling
-                options.
+                Agende um test drive online em minutos, com opções de horários flexíveis.
               </p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Secure Process</h3>
+              <h3 className="text-xl font-bold mb-2">Processo Seguro</h3>
               <p className="text-gray-600">
-                Verified listings and secure booking process for peace of mind.
+                Anúncios verificados e agendamento protegido para sua tranquilidade.
               </p>
             </div>
           </div>

@@ -23,11 +23,11 @@ export default function RootLayout({ children }) {
           <main className="min-h-screen">{children}</main>
           <Toaster richColors />
 
-          <footer className="bg-blue-50 py-12">
-            <div className="container mx-auto px-4 text-center text-gray-600">
-              <p>Made with 💗 by RoadsideCoder</p>
-            </div>
-          </footer>
+          <footer className="bg-zinc-800 text-zinc-300 text-center py-4 mt-10">
+           <p className="text-sm">
+            &copy; {new Date().getFullYear()} marccinitech. Todos os direitos reservados.
+          </p>
+        </footer>
         </body>
       </html>
     </ClerkProvider>
