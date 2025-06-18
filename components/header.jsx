@@ -46,14 +46,14 @@ const Header = async ({ isAdminPage = false }) => {
                 >
                   <Button variant="outline">
                     <CarFront size={18} />
-                    <span className="hidden md:inline">My Reservations</span>
+                    <span className="hidden md:inline">Minhas Reservas</span>
                   </Button>
                 </Link>
               )}
               <a href="/saved-cars">
                 <Button className="flex items-center gap-2">
                   <Heart size={18} />
-                  <span className="hidden md:inline">Saved Cars</span>
+                  <span className="hidden md:inline">Carros Salvos</span>
                 </Button>
               </a>
               {isAdmin && (

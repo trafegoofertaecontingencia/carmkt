@@ -4,8 +4,8 @@ import { redirect } from "next/navigation";
 import { ReservationsList } from "./_components/reservations-list";
 
 export const metadata = {
-  title: "My Reservations | Vehiql",
-  description: "Manage your test drive reservations",
+  title: "Minhas Reservas | Vehiql",
+  description: "Gerencie suas Reservas",
 };
 
 export default async function ReservationsPage() {
@@ -20,7 +20,7 @@ export default async function ReservationsPage() {
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-6xl mb-6 gradient-title">Your Reservations</h1>
+      <h1 className="text-6xl mb-6 gradient-title">Suas Reservas</h1>
       <ReservationsList initialData={reservationsResult} />
     </div>
   );

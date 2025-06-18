@@ -40,7 +40,7 @@ export default async function Home() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-2xl font-bold">Featured Cars</h2>
+            <h2 className="text-2xl font-bold">Carros em Destaque</h2>
             <Button variant="ghost" className="flex items-center" asChild>
               <Link href="/cars">
                 Ver todos <ChevronRight className="ml-1 h-4 w-4" />
@@ -132,7 +132,7 @@ export default async function Home() {
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-2xl font-bold">Browse by Body Type</h2>
+            <h2 className="text-2xl font-bold">Pesquise por Categoria</h2>
             <Button variant="ghost" className="flex items-center" asChild>
               <Link href="/cars">
                 View All <ChevronRight className="ml-1 h-4 w-4" />
@@ -149,7 +149,7 @@ export default async function Home() {
                 <div className="overflow-hidden rounded-lg flex justify-end h-28 mb-4 relative">
                   <Image
                     src={
-                      type.imageUrl || `/body/${type.name.toLowerCase()}.webp`
+                      type.imageUrl || type.image
                     }
                     alt={type.name}
                     fill
@@ -171,7 +171,7 @@ export default async function Home() {
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-8">
-            Frequently Asked Questions
+            Perguntas Frequentes
           </h2>
           <Accordion type="single" collapsible className="w-full">
             {faqItems.map((faq, index) => (
@@ -188,15 +188,14 @@ export default async function Home() {
       <section className="py-16 dotted-background text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Ready to Find Your Dream Car?
+            Pronto para Encontrar o Carro dos Seus Sonhos?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of satisfied customers who found their perfect
-            vehicle through our platform.
+            Junte-se a milhares de clientes satisfeitos que encontraram o carro ideal na nossa plataforma.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" variant="secondary" asChild>
-              <Link href="/cars">View All Cars</Link>
+              <Link href="/cars">Ver Todos os Carros</Link>
             </Button>
             <SignedOut>
               <Button size="lg" asChild>
