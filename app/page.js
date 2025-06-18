@@ -59,7 +59,7 @@ export default async function Home() {
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-2xl font-bold">Browse by Make</h2>
+            <h2 className="text-2xl font-bold">Navegar por Marca</h2>
             <Button variant="ghost" className="flex items-center" asChild>
               <Link href="/cars">
                 Ver todos <ChevronRight className="ml-1 h-4 w-4" />
